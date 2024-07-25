@@ -36,7 +36,7 @@ def fig_to_pil(fig):
     buf.seek(0)
     return Image.open(buf)
 
-# spaces.GPU
+@spaces.GPU
 def run_example(task_prompt, image, text_input=None, model_id='microsoft/Florence-2-large'):
     model = models[model_id]
     processor = processors[model_id]
