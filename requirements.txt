@@ -1,6 +1,4 @@
+spaces
 transformers
 timm
 peft
-gradio
-torch
-spaces

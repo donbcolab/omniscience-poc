@@ -2,7 +2,6 @@ import gradio as gr
 from transformers import AutoProcessor, AutoModelForCausalLM
 # import peft
 import spaces
-import torch
 
 import requests
 import copy
