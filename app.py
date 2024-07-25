@@ -130,7 +130,7 @@ single_task_list =[
 ]
 
 with gr.Blocks(theme="sudeepshouche/minimalist") as demo:
-    gr.Markdown("## 🧬OmniScience - fine tuned VLM models for use in function calling 🔧")
+    gr.Markdown("## 🧬OmniScience - building teams of fine tuned VLM models for diagnosis and detection 🔧")
     gr.Markdown("- 🔬Florence-2 Model Proof of Concept, focusing on Object Detection <OD> tasks.")
     gr.Markdown("- Fine-tuned for 🩸Blood Cell Detection using the [Roboflow BCCD dataset](https://universe.roboflow.com/roboflow-100/bccd-ouzjz/dataset/2), this model can detect blood cells and types in images.")
     gr.Markdown("")
