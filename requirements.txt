@@ -1,0 +1,9 @@
+# spaces
+transformers
+timm
+peft
+gradio
+torch
+setuptools
+wheel
+spaces

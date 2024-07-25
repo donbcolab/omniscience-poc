@@ -1,8 +1,8 @@
 ---
 title: Omniscience Poc
-emoji: 🏆
-colorFrom: pink
-colorTo: yellow
+emoji: 🔬🧫
+colorFrom: gray
+colorTo: indigo
 sdk: gradio
 sdk_version: 4.39.0
 app_file: app.py
