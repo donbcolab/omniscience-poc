@@ -1,4 +1,3 @@
-# spaces
 transformers
 timm
 peft

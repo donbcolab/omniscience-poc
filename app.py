@@ -1,7 +1,7 @@
 import gradio as gr
 from transformers import AutoProcessor, AutoModelForCausalLM
 # import peft
-# import spaces
+import spaces
 
 import requests
 import copy
@@ -130,12 +130,12 @@ single_task_list =[
 ]
 
 with gr.Blocks(theme="sudeepshouche/minimalist") as demo:
-    gr.Markdown("## OmniScience - fine tuned VLM models for use in function calling 🔧")
-    gr.Markdown("- This is a proof-of-concept for the Florence-2 model, focusing on Object Detection <OD> tasks.")
-    gr.Markdown("- Fine-tuned on the [Roboflow BCCD dataset](https://universe.roboflow.com/roboflow-100/bccd-ouzjz/dataset/2), this model can detect blood cells and types in images.")
+    gr.Markdown("## 🧬OmniScience - fine tuned VLM models for use in function calling 🔧")
+    gr.Markdown("- 🔬Florence-2 Model Proof of Concept, focusing on Object Detection <OD> tasks.")
+    gr.Markdown("- Fine-tuned for 🩸Blood Cell Detection using the [Roboflow BCCD dataset](https://universe.roboflow.com/roboflow-100/bccd-ouzjz/dataset/2), this model can detect blood cells and types in images.")
     gr.Markdown("")
     gr.Markdown("BCCD Datasets on Hugging Face:")
-    gr.Markdown("- [Florence 2](https://huggingface.co/datasets/dwb2023/roboflow100-bccd-florence2/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg), [PaliGemma](https://huggingface.co/datasets/dwb2023/roboflow-bccd-paligemma/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg)")
+    gr.Markdown("- [🌺Florence 2](https://huggingface.co/datasets/dwb2023/roboflow100-bccd-florence2/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg), [💎PaliGemma](https://huggingface.co/datasets/dwb2023/roboflow-bccd-paligemma/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg)")
 
 
     with gr.Tab(label="Florence-2 Object Detection"):
@@ -169,6 +169,13 @@ with gr.Blocks(theme="sudeepshouche/minimalist") as demo:
             label='Try examples'
         )
 
-        submit_btn.click(process_image, [input_img, task_prompt, text_input, model_selector], [output_text, output_img])
+        submit_btn.click(process_image, [input_img, task_prompt, model_selector], [output_text, output_img])
+
+    gr.Markdown("## 🚀Other Cool Stuff:")
+    gr.Markdown("- [Florence 2 Whitepaper](https://arxiv.org/pdf/2311.06242) - how I found out about the Roboflow 100 and the BCCD dataset.")
+    gr.Markdown("- [Roboflow YouTube Video on Florence 2 fine-tuning](https://youtu.be/i3KjYgxNH6w?si=x1ZMg9hsNe25Y19-&t=1296) - bookmarked an 🧠insightful trade-off analysis of various VLMs.")
+    gr.Markdown("- [Landing AI - Vision Agent](https://va.landing.ai/) - 🌟just pure WOW.  bringing agentic planning into solutions architecture.")
+    gr.Markdown("- [OmniScience fork of Landing AI repo](https://huggingface.co/spaces/dwb2023/omniscience) - I had a lot of fun with this one... some great 🔍reverse engineering enabled by W&B's Weave📊.")
+    gr.Markdown("- [Scooby Snacks🐕  - microservice based function calling with style](https://huggingface.co/spaces/dwb2023/blackbird-app) - Leveraging 🤖Claude Sonnet 3.5 to orchestrate Microservice-Based Function Calling.")
 
 demo.launch(debug=True)
