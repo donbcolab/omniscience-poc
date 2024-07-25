@@ -1,5 +1,5 @@
 ---
-title: Omniscience Poc
+title: Omniscience - Fine-tuned diagnosis
 emoji: 🔬🧫
 colorFrom: gray
 colorTo: indigo
