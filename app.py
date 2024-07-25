@@ -135,7 +135,7 @@ with gr.Blocks(theme="sudeepshouche/minimalist") as demo:
     gr.Markdown("- Fine-tuned for 🩸Blood Cell Detection using the [Roboflow BCCD dataset](https://universe.roboflow.com/roboflow-100/bccd-ouzjz/dataset/2), this model can detect blood cells and types in images.")
     gr.Markdown("")
     gr.Markdown("BCCD Datasets on Hugging Face:")
-    gr.Markdown("- [🌺Florence 2](https://huggingface.co/datasets/dwb2023/roboflow100-bccd-florence2/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg), [💎PaliGemma](https://huggingface.co/datasets/dwb2023/roboflow-bccd-paligemma/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg)")
+    gr.Markdown("- [🌺 Florence 2](https://huggingface.co/datasets/dwb2023/roboflow100-bccd-florence2/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg), [💎 PaliGemma](https://huggingface.co/datasets/dwb2023/roboflow-bccd-paligemma/viewer/default/test?q=BloodImage_00038_jpg.rf.1b0ce1635e11b3b49302de527c86bb02.jpg)")
 
 
     with gr.Tab(label="Florence-2 Object Detection"):
