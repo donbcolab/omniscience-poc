@@ -165,7 +165,7 @@ with gr.Blocks(theme="sudeepshouche/minimalist") as demo:
             inputs=[input_img, task_prompt],
             outputs=[output_text, output_img],
             fn=process_image,
-            cache_examples=True,
+            cache_examples=False,
             label='Try examples'
         )
 
